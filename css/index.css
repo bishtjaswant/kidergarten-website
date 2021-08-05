@@ -1,0 +1,1022 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red:#f53b57;
+    --white:#fff;
+}
+
+body {
+    font-size: 64.5%;
+    overflow-x: hidden;
+    font-family: 'Handlee', cursive;
+    scroll-behavior: smooth;
+}
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+*::selection{
+    background-color: var(--red);
+    color:var(--white);
+}
+
+*::placeholder{
+text-transform: capitalize;
+
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+#menu {
+    display: none;
+}
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2.75rem 3.125rem 8.125rem 3.125rem;
+}
+
+.btn {
+    padding: 1rem;
+    background: var(--red);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1rem rgb(245 59 87);
+}
+
+.background{
+    background: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.up_down::before,
+.up_down::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10rem;
+    width: 100%;
+    background-size: cover;
+}
+
+.up_down::before {
+    top: 4rem;
+    height: 3rem;
+    background: url(../images/img-top.png) no-repeat;
+}
+
+.up_down::after {
+    background: url(../images/img-down.png) no-repeat;
+    bottom: 10rem;
+    height: 3rem;
+    z-index: -10;
+}
+
+.header{
+    position: fixed;
+    z-index: 100;
+    inset: 0;
+    background: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     width: 100%;
+    height: 2rem;
+    padding: 1.4rem 4rem;
+        padding-bottom: 2.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .add__header{
+    background: #9ccc65;
+    height: 1rem;
+ 
+    display: flex;
+    align-items: flex-start;
+}
+
+.add__header .logo span {
+    font-size: 3rem;
+    margin-left: 0.625rem;
+    color: var(--white);
+} */
+
+
+
+
+.header .logo i {
+    font-size: 2.1875rem;
+    color: var(--red);
+}
+
+.header .logo span {
+    font-size: 3rem;
+    margin-left: 0.625rem;
+}
+.navbar .navbar__items{
+    display: flex;
+} 
+
+.navbar .navbar__items .navbar__item {
+    margin: 0 0.75rem;
+}
+
+.navbar .navbar__items .navbar__item a {
+    color: #333;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+/* common css  */
+ 
+.common {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.common .content{
+    flex-basis: 50%;
+}
+
+.common .content .title {
+	font-size: 3.375rem;
+	text-transform: capitalize;
+	color: var(--red);
+}
+
+.common .sub__title{
+    font-size: 2.7rem;
+}
+.common .content p {
+    font-size: 1.22rem;
+    margin: 0.3125rem 0;
+}
+/* common css */
+
+
+
+/* home css  */
+
+
+/* feature css */
+.feature {
+    display: flex;
+
+    position: relative;
+    padding:  8.75rem 3.125rem 8.125rem 3.125rem;
+}
+
+
+.feature .box img {
+    width: 10%;
+    height: 10%;
+}
+
+
+.feature .title {
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+
+.feature .title span {
+    color: var(--red);
+}
+
+
+.feature .box {
+    display: flex; 
+    gap: 20px 6px;
+    margin: 3rem 0;
+
+}
+
+.feature .box .detail {
+    flex-basis: 41rem;
+}
+
+.feature .box .detail .sub__title{
+    font-size: 21px;
+    text-transform: capitalize;
+}
+
+
+
+.feature .box .detail p {
+    font-size: .98rem;
+    color: #424141;
+}
+
+
+.feature .stick {
+    width: 6rem;
+    height: 34rem;
+    margin: 0 1.4rem;
+}
+
+
+/* about ccss  */
+.about .content .title{
+    color: var(--red);
+}
+
+
+/* service css   */
+.service{
+    text-align: center; 
+    position: relative;
+}
+
+.service .title {
+    color: var(--red);
+}
+
+.service .title {
+    color: var(--red);
+    font-size: 4rem;
+    margin-bottom: .8rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.service .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service .container .card { 
+  border-radius: 1.4rem; 
+ 
+    cursor: pointer;
+    overflow: hidden;
+   margin: 1rem;
+   flex: 1 1 22rem;
+   position: relative;
+   box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+ 
+.service .container .card .card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.service .container .card .info { 
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service .container .card:hover .info {
+    top: 0%;
+}
+.service .container .card .sub__title {
+    color: var(--white);
+    font-size: 1.5rem; 
+    text-transform: capitalize;
+    transition: all .4s linear;
+    transform: translateY(11rem);
+    opacity: 0; 
+}
+
+
+.service .container .card:hover .sub__title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* teacher  css   */
+
+.teacher .title {
+    color: var(--red);
+    font-size: 4rem;
+    margin-bottom: .8rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.teacher .card__wrapper {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr );
+    column-gap: 1rem;
+}
+
+.teacher .card__wrapper .card {
+    background-color: var(--white);
+    padding: 1rem .5rem .5rem .5rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),    0 6.7px 5.3px rgba(0, 0, 0, 0.028),    0 12.5px 10px rgba(0, 0, 0, 0.035),    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),    0 100px 80px rgba(0, 0, 0, 0.07);
+    background: url(../images/card-bg1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.teacher .card .card__detail {
+    margin-top: 1rem;
+}
+.teacher .card .card__detail h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.teacher .card .card__detail p{
+ 
+    font-size: 1,rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--red);
+   
+}
+
+
+.teacher p.lead  {
+    font-size: .78rem;
+    color: #666;
+    text-align: center;
+    font-weight: bold;
+}
+.teacher .card__social {
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.teacher .card__social i {
+    font-size: 1rem;
+    color: var(--red);
+    border: .1rem solid var(--red);
+    border-radius: 50%;
+    padding: .3rem;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+
+.teacher .card__social i:hover{
+    background-color:var(--red);
+    color: var(--white);
+}
+
+.teacher .card img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    clip-path: circle();
+}
+
+
+/* plan css  */
+
+.plan{
+    text-align: center;
+}
+.plan .title {
+    color: var(--red);
+    font-size: 4rem;
+    margin-bottom: .8rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.plan .plan__box {
+    display: flex;
+    gap: 0 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.plan .plan__box .plan__section{
+    padding: 1.5rem 1rem;
+    background-color: var(--white);;
+     overflow: hidden;
+     box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 2%), 0 6.7px 5.3px rgb(0 0 0 / 3%), 0 12.5px 10px rgb(0 0 0 / 4%), 0 22.3px 17.9px rgb(0 0 0 / 4%), 0 41.8px 33.4px rgb(0 0 0 / 5%), 0 100px 80px rgb(0 0 0 / 7%);
+    
+    position: relative;
+
+    background: url(../images/card-bg2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+
+.plan .plan__section .offer {
+    /* font-size: 1.8rem; */
+    text-transform: capitalize;
+    background: var(--red);
+    padding: 0.7rem;
+    position: absolute;
+    font-weight: bolder;
+    transform: rotate3d(1, 1, 1, 58deg);
+    width: 100%;
+    color: var(--white);
+    box-shadow: 0 2.8px 2.2px rgb(0 0 0 / 2%), 0 6.7px 5.3px rgb(0 0 0 / 3%), 0 12.5px 10px rgb(0 0 0 / 4%), 0 22.3px 17.9px rgb(0 0 0 / 4%), 0 41.8px 33.4px rgb(0 0 0 / 5%), 0 100px 80px rgb(0 0 0 / 7%);
+    font-size: 2.2rem;
+    right: -5.98rem;
+    top: -1.4rem;
+    z-index: -56;
+}
+
+.plan .plan__box .plan__duration h2 {
+    font-size:2.5rem;
+    color: #4e4d4c;
+    text-transform: capitalize;
+}
+
+.plan .plan__section .plan__price p span:first-child {
+    font-size: 1.2rem;
+    color: var(--red);
+    font-weight: 800;
+}
+
+.plan .plan__section .plan__price p span:last-child {
+    font-size: 2rem;
+    color: var(--red);
+    margin-left: .6rem;
+}
+
+
+
+.plan .plan__section .plan__price p span:last-child{
+    font-size: 3rem;
+}
+
+.plan .plan__section .plan__description{
+    margin: 1rem 0;
+}
+
+
+.plan .plan__section .plan__description p {
+    font-size: 1rem;
+}
+
+/* contact css */
+.contact{
+    display: flex;
+}
+
+.contact .row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contact .contact-info .title, .contact-form h3 {
+	font-size: 2.6rem;
+	text-transform: capitalize;
+	font-weight: 900;
+}
+
+
+.contact .contact-info .box p {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.contact .contact-info .box  i{
+	color: var(--red);
+}
+.contact .contact-info .social{
+    margin-top: 2rem;
+}
+
+.contact .contact-info   .social a{
+	font-size: 2rem;
+	color: var(--red);
+}
+
+.contact .contact-info  .newsletter{
+	margin-top: 2rem;
+}
+
+.contact .contact-info  .newsletter form{
+    display: flex;
+    flex-flow: column;
+}
+
+
+.contact .contact-info .newsletter form input[type='email']{
+    width: 100%;
+    padding: .781rem;
+    border-radius: 3rem;
+    outline: none;
+    border: none;
+    margin: .4rem 0;
+}
+
+
+.contact .contact-info .newsletter form input[type='submit']{
+    padding: .6rem;
+    background: var(--red);
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 0.2rem 1rem rgb(245 59 87);
+    width: 40%;
+}
+
+
+
+.contact .contact-info   .social a:not(:last-child){
+    margin-right: 1rem;
+}
+
+
+.contact .contact-form{
+    margin-left: 3rem;
+}
+
+
+
+.contact .contact-form .box{
+	width: 100%;
+	padding: .781rem;
+	border-radius: 3rem;
+	outline: none;
+	border: none;
+    margin: .4rem 0;
+}
+
+.contact .contact-form .message {
+    width: 100%;
+    padding: .781rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    margin: .4rem 0;
+    height: 6.4rem;
+}
+
+.contact     .contact-form {
+	flex-basis: 60%;
+}
+
+
+/* footer css  */
+.footer{
+        padding: 1.2rem;
+    background: var(--red);
+    border-top: .5rem solid var(--white);
+}
+
+.footer p{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+
+
+
+@media (max-width:1200px) {
+    html{
+        font-size: 62.5%;
+    }
+ 
+    .header {
+        padding: 2.5rem 4%;
+        padding-bottom: 1.6rem;
+        height: 2rem;
+    }
+
+    .navbar .navbar__items .navbar__item a {
+        color: #333;
+        font-size: 21px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    .service .container .card { 
+        flex: 1 1 18rem;
+    }
+
+
+}
+
+
+
+@media (max-width:768px) {
+    
+    html{
+        font-size: 60.5%;
+    }
+
+
+    #menu {
+        display: block;
+    }
+ 
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;;
+        height: calc(100vh - 100%);
+        background: url(../images/card-bg1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-top: 0.3125rem solid #333;
+        padding-top: 0.375rem;
+        transition: all .3s ease-in-out;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar__toggle{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+
+
+    
+    .navbar .navbar__items {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar .navbar__items .navbar__item a {
+        color: #333;
+        font-size: 32px;
+        font-weight: bold;
+        margin: 14px 0;
+        display: block;
+    }
+
+    #menu {
+        font-size: 2.25rem;
+        border: 0.1875rem solid #333;
+        padding: 0.25rem;
+        color: #333;
+        cursor: pointer;
+        display: block;
+    }
+
+    .home {
+        min-height: 0%;
+    }
+
+    .feature { 
+        flex-flow: row nowrap;
+    }
+    .feature .box .detail {
+        flex-basis: 100%;
+    }
+    
+    .feature .title {
+        font-size: 2rem;
+    }
+
+    .about {
+        min-height: 0%;
+    }
+
+    .service {
+        min-height: 0%;
+    }
+
+    .teacher{
+        min-height: 0%;
+    }
+
+    .teacher .card__wrapper {
+        grid-template-columns: repeat(4, 1fr );
+        row-gap: 1rem;
+    }
+
+    .teacher .card .card__detail h2 {
+        font-size: 2rem; 
+    }
+    .teacher .card .card__detail p {
+        font-size: 1.4rem;
+    }
+    .teacher p.lead {
+        font-size: 1rem;
+    }
+    
+    .teacher .card__social i {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    .teacher .card__social {
+        justify-content: space-evenly;
+    }
+
+
+    .plan{
+        min-height: 0%;
+    }
+
+
+    .plan .plan__box .plan__duration h2 {
+        font-size: 4rem;
+    }
+
+    .plan .plan__section .plan__price p span:first-child {
+        font-size: 2rem; 
+    }
+
+    .plan .plan__section .plan__price p span:last-child {
+        font-size: 4rem !important;
+        font-weight: 900;
+    }
+ 
+   
+    .plan .plan__section .offer {
+        font-size: 2.2rem;
+        right: -8.98rem;
+        top: -2.4rem;
+        z-index: -56;
+    }
+
+
+
+    .contact { 
+        min-height: 0;
+        flex-flow: column wrap;
+    }
+
+
+    .contact .row { 
+        flex-flow: row ;
+    }
+
+    .contact     .contact-form {
+        flex-basis: 50%; 
+        margin-left: 0;
+    }
+
+    .contact .contact-info {
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-basis: 45%;
+    }
+
+    .contact .contact-info .title, .contact-form h3 {
+        font-size: 3.2rem;
+    }
+
+    .contact .contact-info .box p {
+        font-size: 1.89rem; 
+    }
+
+    .contact .contact-info   .social a {
+        font-size: 2.5rem;
+    }
+    .contact .contact-info .newsletter form input[type='email'] {
+        width: 80%;
+        margin: 1.24rem 0;
+    }
+
+
+    .contact .image{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media (max-width:576px) {
+    html{
+        font-size: 50%;
+    }
+
+    .section {
+        min-height: 90%; 
+        margin-top: 6rem;
+    }
+
+
+
+
+
+    .home {
+        display: block;
+        padding-top: 10rem;
+    }
+
+    .home  .image  {
+        display: none;
+    }
+
+
+    .btn {
+        padding: .6rem;
+        font-weight: 200; 
+        margin-top: 1.8rem;
+    }
+
+
+
+
+
+
+    .feature { 
+        flex-flow: column wrap;
+    }
+    .feature .box .detail {
+        flex-basis: 100%;
+    }
+    
+    .feature .title {
+        font-size: 2rem; 
+    }
+
+    .feature .stick {
+        display: none;
+    }
+
+    .up_down::before,
+    .up_down::after {
+    display: none;
+    }
+
+
+    .about { 
+        flex-flow: column wrap;
+    }
+
+    .about .content .title {
+        color: var(--red);
+        text-align: center;
+    }
+
+
+
+    .service .title {
+        font-size: 2rem; 
+    }
+
+    .teacher .title { 
+        font-size: 3rem;  
+    }
+    
+    .teacher .card__wrapper {
+        grid-template-columns: repeat(2, 1fr );
+        row-gap: 1rem;
+    }
+
+    .teacher .card .card__detail h2 {
+        font-size: 3rem;
+    }
+    .teacher .card .card__detail p {
+        font-size: 1.9rem;
+    }
+    
+    .teacher .card__social i {
+        font-size: 1.7rem;
+        padding: 1.1rem;
+    }
+    .teacher p.lead {
+        font-size: 1.2rem;
+    }
+
+    .teacher .card__social {
+        
+        justify-content: space-evenly;
+        
+    }
+    .plan .plan__box { 
+        flex-flow: column wrap;
+        gap: 1rem 0;
+    }
+
+    
+
+    .plan .plan__section .offer {
+        font-size: 2.2rem;
+        right: -15.98rem;
+        top: -1.4rem;
+        z-index: -56;
+    }
+
+    .contact { 
+        flex-flow: column wrap;
+    }
+
+
+    .contact .row { 
+        flex-flow: column wrap;
+    }
+
+    .contact     .contact-form {
+        flex-basis: 100%; 
+        margin-left: 0;
+    }
+
+    .contact .contact-info  {
+        margin-top: 2rem;
+        margin-bottom: 6rem;
+    }
+
+
+    .contact .contact-info .title, .contact-form h3 {
+        font-size: 4.2rem; 
+    }
+
+    .contact .contact-info .box p {
+        font-size: 1.89rem; 
+    }
+
+
+    .contact .contact-info   .social a {
+        font-size: 4rem; 
+    }
+
+    .contact .image{
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+
